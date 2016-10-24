@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Nearest City Finder</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/stylesheets/style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <hr>
+	  <div class="header">
+        <h3 class="text-muted"><center>Find K nearest cities: Enter a City, State & k</center></h3>
+      </div>
+	        
+	  <div>      
+      <form name="search" action="search" method="post" enctype="multipart/form-data">
+	  <table style="width:30%" cellpadding="2">
+        <tr><td><center>City:</td> <td><input type="text" name="city"></td></tr>
+		<tr><td><center>State:</td> <td>    <input type="text" name="code"></td></tr>
+		<tr><td><center>k-cities:</td> <td> <input type="text" name="k"></td></tr>
+				<center><input type="hidden" name="d" value="">
+				<center><input type="hidden" name="longitude" value="">
+				<center><input type="hidden" name="latitude" value="">
+        <tr><td></td><td><input type="submit" value="Search"></center></td></tr>
+	  </table>		
+      </form>
+	  <hr>
+      </div
+	  
+	  <div class="header">
+        <h3 class="text-muted"><center>Find cites within N Km. Enter a City, State & N</center></h3>
+      </div>
+		
+	  <div>      
+      <form name="search" action="search" method="post" enctype="multipart/form-data">
+	  <table style="width:30%" cellpadding="2">
+        <tr><td><center>City:</td> <td><input type="text" name="city"></td></tr>
+		<tr><td><center>State:</td> <td>    <input type="text" name="code"></td></tr>
+		<tr><td><center>Radius<font size="2">(in km):</font></td> <td> <input type="text" name="d"></td></tr>
+				<center><input type="hidden" name="k" value="">
+				<center><input type="hidden" name="longitude" value="">
+				<center><input type="hidden" name="latitude" value="">
+        <tr><td></td><td><input type="submit" value="Search"></center></td></tr>
+	  </table>		
+      </form>
+      </div>
+	  <hr>	  
+	  
+	  <div class="header">
+        <h3 class="text-muted"><center>Find K nearest cities: Enter Longitude, Latitude & k</center></h3>
+      </div>
+		
+	  <div>     
+      <form name="search" action="search" method="post" enctype="multipart/form-data">
+	  <table style="width:30%" cellpadding="2">
+        <tr><td><center>Latitude:</td> <td>    <input type="text" name="latitude"></td></tr>
+		<tr><td><center>Longitude:</td> <td><input type="text" name="longitude"></td></tr>
+		<tr><td><center>k-cities:</td> <td> <input type="text" name="k"></td></tr>
+				<center><input type="hidden" name="d" value="">
+				<center><input type="hidden" name="city" value="">
+				<center><input type="hidden" name="code" value="">
+        <tr><td></td><td><input type="submit" value="Search"></center></td></tr>
+	  </table>		
+      </form>
+      </div>
+	  <hr>	
+	  
+	  <div class="header">
+        <h3 class="text-muted"><center>Find cites within N Km. Enter Longitude, Latitude & N</center></h3>
+      </div>
+		
+	  <div>     
+      <form name="search" action="search" method="post" enctype="multipart/form-data">
+	  <table style="width:30%" cellpadding="2">
+        <tr><td><center>Latitude:</td> <td>    <input type="text" name="latitude"></td></tr>
+		<tr><td><center>Longitude:</td> <td><input type="text" name="longitude"></td></tr>
+		<tr><td><center>Radius<font size="2">(in km):</font></td> <td> <input type="text" name="d"></td></tr>
+				<center><input type="hidden" name="k" value="">
+				<center><input type="hidden" name="city" value="">
+				<center><input type="hidden" name="code" value="">
+        <tr><td></td><td><input type="submit" value="Search"></center></td></tr>
+	  </table>		
+      </form>
+      </div>
+	  <hr>
+	  
+    </div>
+
+  </body>
+
+</html>
+
